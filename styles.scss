@@ -1,0 +1,45 @@
+@import "./assets/styles/variables";
+@import "./assets/styles/button";
+@import "./assets/styles/topography";
+
+//@use "./assets/styles/variables";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    background-color: $primary-colour;
+    justify-content: space-between;
+    &__title{
+        color: $text-colour;
+    }    
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-family: $secondary-font;
+    }
+
+    &__subtitle{
+        font-family: $primary-font;
+    }
+}
+
+.send_form{
+    background-color: #cccaca;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}    
+
+form{
+    display: inline-block;
+}
